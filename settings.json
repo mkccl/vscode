@@ -1,7 +1,7 @@
 {
   // editor
   "editor.fontSize": 12,
-  "editor.fontFamily": "Fira Code SemiBold",
+  "editor.fontFamily": "MonoLisa-BoldItalic",
   "editor.fontLigatures": true,
   "editor.wordWrap": "on",
   "editor.minimap.enabled": false,
