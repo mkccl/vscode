@@ -1,9 +1,10 @@
 {
   // editor
-  "editor.fontSize": 12,
-  "editor.fontFamily": "MonoLisa-BoldItalic",
+  "editor.fontSize": 14,
+  "editor.fontFamily": "Fira Code SemiBold",
   "editor.fontLigatures": true,
   "editor.wordWrap": "on",
+  "editor.lineHeight": 1.5,
   "editor.minimap.enabled": false,
   "editor.tokenColorCustomizations": {
     "textMateRules": [
@@ -15,12 +16,26 @@
       }
     ]
   },
+  "window.menuBarVisibility": "toggle",
   // cursor
-  "editor.cursorSmoothCaretAnimation": "on",
-  "editor.cursorBlinking": "expand",
   // config related to code formatting
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
+
+  // Theme
+  "catppuccin-icons.hidesExplorerArrows": true,
+  "workbench.tree.renderIndentGuides": "none",
+  "workbench.sideBar.location": "left",
+  "workbench.activityBar.visible": false,
+  "workbench.activityBar.location": "default",
+  "workbench.editor.alwaysShowEditorActions": false,
+  "editor.guides.indentation": false,
+  "editor.renderLineHighlight": "none",
+  "editor.cursorBlinking": "solid",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "breadcrumbs.enabled": false,
+  "explorer.compactFolders": false,
+
   "[javascript]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": null
@@ -39,7 +54,8 @@
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.fontWeight": "normal",
   "terminal.integrated.fontFamily": "FiraCode",
-  "workbench.iconTheme": "vscode-icons",
+  "workbench.iconTheme": "catppuccin-macchiato",
+  "workbench.colorTheme": "Catppuccin Macchiato",
   // terminal customization
   "workbench.colorCustomizations": {
     "terminalCursor.background": "#A89984",
@@ -61,5 +77,55 @@
     "terminal.ansiWhite": "#A89984",
     "terminal.ansiYellow": "#FAC03B"
   },
-  "redhat.telemetry.enabled": false
+  "redhat.telemetry.enabled": false,
+  "terminal.integrated.env.windows": {},
+
+  "console-ninja.featureSet": "Community",
+
+  // VIM settings
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "d"],
+      "after": ["d", "d"]
+    },
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["lineBreakInsert"],
+      "silent": true
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false,
+    "<C-b>": false,
+    "<C-e>": false,
+    "<C-d>": false,
+    "<C-u>": false,
+    "<C-y>": false,
+    "<C-z>": false,
+    "<C-x>": false,
+    "<C-c>": false,
+    "<C-v>": false
+  },
+
+  // To improve performance,
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  }
 }
